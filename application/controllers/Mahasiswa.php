@@ -19,6 +19,7 @@ class Mahasiswa extends CI_Controller {
 	{
 		$this->load->view('mahasiswa_tambah');
 	}
+	
 
 
 }

@@ -10,7 +10,7 @@
 		<a href="" class="navbar-brand"> Tugas </a>
 		<div class="navbar-nav">
 			<a href="" class="nav-link active">Home</a>
-			<a href="" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('mahasiswa/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 
 		<div class="navbar-nav ml-auto">
