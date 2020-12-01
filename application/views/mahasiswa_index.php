@@ -30,15 +30,19 @@
 				<th>Alamat</th>
 				<th>Aksi</th>
 			</tr>
-			<tr>
-				<td>1</td>
-				<td>1810330015</td>
-				<td>Dewi Ratna</td>
-				<td>Kekalik</td>
-				<td>
-					<a href="" class="btn btn-info btn-sm">Edit</a>
-					<a href="" class="btn btn-danger btn-sm">Hapus</a>
-				</tr>
+			<?php $no = 1; ?>
+			<?php foreach ($data_tabel as $key): ?>
+
+				<tr>
+					<td><?= $no++; ?></td>
+					<td><?= $key->nim ?></td>
+					<td><?= $key->nama ?></td>
+					<td><?= $key->alamat ?></td>
+					<td>
+						<a href="" class="btn btn-info btn-sm">Edit</a>
+						<a href="" class="btn btn-danger btn-sm">Hapus</a>
+					</tr>
+				<?php endforeach ?>
 			</table>
 		</div>
 

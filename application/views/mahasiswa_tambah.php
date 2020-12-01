@@ -25,7 +25,7 @@
 
 			<div class="row">
 				<div class="col-sm-12">
-					<form action="" method="post">
+					<form action="<?= site_url('mahasiswa/simpan_data') ?>" method="post">
 						<div class="form-group">
 							<label for="nim">NIM</label>
 							<input input type="text" name="nim" id="nim" class="form-control" placeholder="Masukkan NIM">
@@ -36,9 +36,15 @@
 							<input type="text" name="nama" id="nama" class="form-control" placeholder="Masukkan Nama">
 						</div>
 
-						<a href="<?= site_url('mahasiswa')?>" class="btn btn-outline-primary btn-sm">Simpan</a>
-						<a href="<?= site_url('mahasiswa')?>" class="btn btn-outline-success btn-sm">Kembali</a> 
+						<div class="form-group">
+							<label for="pesan">Alamat</label>
+							<textarea name="alamat" class="form-control" rows="5" placeholder="Masukkan alamat"></textarea>
+						</div>
 
+						<div class="form-group">
+							<button type="submit" name="submit" class="btn btn-outline-primary btn-sm">Simpan</button>
+						</div>
+						
 					</form>
 				</div>
 			</div>
