@@ -5,11 +5,12 @@
 	<link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/bootstrap.min.css') ?>">
 </head>
 <body>
+
 	<nav class="navbar navbar-expand-lg navbar-dark shadow" style="background-color: #5f9ea0">
 		<a href="" class="navbar-brand"> Tugas </a>
 		<div class="navbar-nav">
 			<a href="" class="nav-link active">Home</a>
-			<a href="<?= site_url('mahasiswa/tambah')?>" class="nav-link">Tambah Data</a>
+			<a href="<?= site_url('bcontroller/tambah')?>" class="nav-link">Tambah Data</a>
 		</div>
 
 		<div class="navbar-nav ml-auto">
@@ -17,16 +18,16 @@
 		</div>
 	</nav>
 
-	<div class="alert alert-dark text-center mt-1" role="alert">Data Mahasiswa</div>
+	<div class="alert alert-dark text-center mt-1" role="alert">Data Jurusan</div>
 
 
 	<div class="container">
 		<table class="table table-bordered table-sm text-center">
 			<tr>
 				<th>No</th>
-				<th>NIM</th>
-				<th>Nama</th>
-				<th>Alamat</th>
+				<th>Kolom Jurusan</th>
+				<th>Kolom Kelas</th>
+				<th>Kolom Isi</th>
 				<th>Aksi</th>
 			</tr>
 			<?php $no = 1; ?>
@@ -34,12 +35,12 @@
 
 				<tr>
 					<td><?= $no++; ?></td>
-					<td><?= $key->nim ?></td>
-					<td><?= $key->nama ?></td>
-					<td><?= $key->alamat ?></td>
+					<td><?= $key->kolom_jurusan ?></td>
+					<td><?= $key->kolom_kelas ?></td>
+					<td><?= $key->kolom_isi ?></td>
 					<td>
-						<a href="<?= site_url('mahasiswa/edit/'.$key->nim) ?>" class="btn btn-info btn-sm">Edit</a>
-						<a href="<?= site_url('mahasiswa/hapus/'.$key->nim) ?>" class="btn btn-danger btn-sm">Hapus</a>
+						<a href="<?= site_url('bcontroller/edit/'.$key->id_015) ?>" class="btn btn-info btn-sm">Edit</a>
+						<a href="<?= site_url('bcontroller/hapus/'.$key->id_015) ?>" class="btn btn-danger btn-sm">Hapus</a>
 					</tr>
 				<?php endforeach ?>
 			</table>
